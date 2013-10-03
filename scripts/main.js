@@ -3,8 +3,9 @@ require([
   'scripts/language-example',
   'scripts/cover-example',
   'scripts/button-example',
-  'scripts/playlist-example'
-], function(models, languageExample, coverExample, buttonExample, playlistExample) {
+  'scripts/playlist-example',
+  'scripts/search-example'
+], function(models, languageExample, coverExample, buttonExample, playlistExample, searchExample) {
   'use strict';
 
   languageExample.doHelloWorld();
@@ -12,5 +13,6 @@ require([
   buttonExample.doShareButtonForArtist();
   buttonExample.doPlayButtonForAlbum();
   playlistExample.doPlaylistForAlbum();
+  searchExample.doSearch();
 
 });

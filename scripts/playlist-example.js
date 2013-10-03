@@ -5,10 +5,15 @@ require([
   'use strict';
 
   var doPlaylistForAlbum = function() {
-    var album = models.Album.fromURI('spotify:album:7rIZIIkNOSchbOV7ynugBE');
-    var list = List.forAlbum(album);
-    document.getElementById('playlistContainer').appendChild(list.node);
-    list.init();
+    var albumMuyFragil = models.Album.fromURI('spotify:album:7rIZIIkNOSchbOV7ynugBE');
+    var listMuyFragil = List.forAlbum(albumMuyFragil);
+    document.getElementById('playlistContainer').appendChild(listMuyFragil.node);
+    listMuyFragil.init();
+
+    var albumAmor = models.Album.fromURI('spotify:album:0eFmjDlxeyvVbDHF8OfJSs');
+    var listAmor = List.forAlbum(albumAmor);
+    document.getElementById('playlistContainer').appendChild(listAmor.node);
+    listAmor.init();
   };
 
   exports.doPlaylistForAlbum = doPlaylistForAlbum;
