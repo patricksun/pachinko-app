@@ -5,13 +5,13 @@ require([
   'use strict';
 
   var doPlayButtonForAlbum = function() {
-    var album = models.Album.fromURI('spotify:album:2mCuMNdJkoyiXFhsQCLLqw');
+    var album = models.Album.fromURI('spotify:album:7rIZIIkNOSchbOV7ynugBE');
     var button = buttons.PlayButton.forItem(album);
     document.getElementById('buttonContainer').appendChild(button.node);
   };
 
   var doShareButtonForArtist = function() {
-    var artist = models.Artist.fromURI('spotify:artist:0gxyHStUsqpMadRV0Di1Qt');
+    var artist = models.Artist.fromURI('spotify:artist:3sDu0EmS1aAWSsRwn1ZcQd');
     var button = buttons.ShareButton.forArtist(artist);
     document.getElementById('buttonContainer').appendChild(button.node);
   };
